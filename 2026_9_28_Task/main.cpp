@@ -1,14 +1,12 @@
 #include<iostream>
-#include"Card.h"
+#include"Game.h"
 int main(void)
 {
-	Card card;
+	Game game;
 
 	srand((unsigned int)time(NULL));
 
-	card.CardInit();
-
-	card.PlayerCard();
+	game.Gameroop();
 
 	return 0;
 }
