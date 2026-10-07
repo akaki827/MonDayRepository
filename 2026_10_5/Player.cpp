@@ -1,40 +1,35 @@
 #include "Player.h"
+#include "Enemy.h"
 #include "Config.h"
 #include <iostream>
 
 using namespace std;
 
-void Player::PlayerInit()
+void Player::PlayerInit(Enemy*e)
 {
-	Player_vit = vit;
 	Player_def = def;
 	Player_agi = agi;
 	Player_atk = atk;
+
+	enemy = e;
 }
-void Player::PlayerInput()
+void Player::PlayerInput(int playerinput)
 {
 	while (true)
 	{
+		cout << "プレイヤーの行動を入力してください\n";
+
 		cin >> playerinput;
 		if (playerinput == Config::ATTAK)
 		{
-			Attak();
+			character.Attack(Player_atk,enemy->Enemy_agi,enemy->Enemy_vit,enemy->Enemy_def);
 			break;
 		}
 		else if (playerinput == Config::HEAL)
 		{
-			Heal();
+			character.Heal(Player_vit);
 			break;
 		}
-		else "それは違う";
+		else cout << "それは違う\n";
 	}
-}
-void Player::Attak()
-{
-	
-}
-void
-Player::Heal()
-{
-
 }

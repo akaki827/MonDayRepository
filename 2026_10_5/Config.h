@@ -8,4 +8,7 @@ namespace Config
 
 	const int ATTAK = 1;
 	const int HEAL = 2;
+
+	const int DMAGE_MAX = 12;
+	const int HEAL_MAX = 12;
 }
