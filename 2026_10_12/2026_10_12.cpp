@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-	Character character("レベル：140　極限ジンオウガ");
+	Character character("セルレギオスに力の解放をしすぎた\nレベル：140　極限ジンオウガ");
 	cout << character.GetName() << endl;
 
 	character.Attack();
