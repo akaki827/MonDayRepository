@@ -13,5 +13,5 @@ std::string Character::GetName()
 
 void Character::Attack()
 {
-	std::cout << "攻撃" << std::endl;
+	std::cout << "エターナルフォースブリザード　相手は死ぬ" << std::endl;
 }
