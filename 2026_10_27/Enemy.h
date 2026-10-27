@@ -11,4 +11,8 @@ public:
 	/// ステータス表示
 	/// <summary>
 	void ShowStatus() const;
+
+	void Damage(int damage);
+
+	int GetHp() const;
 };
